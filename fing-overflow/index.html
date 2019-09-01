@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Hello BWorld!</title>
+  <title>Fing Overflow</title>
 
   <meta name="description" content="The HTML5 hello bootstrap world">
   <meta name="author" content="eviotti">
@@ -24,13 +24,20 @@
     .question-listed-stats button{
       font-size: 13px !important;
     }
+
+    #header{
+      border-top: 3px solid Dodgerblue;
+    }
   </style
 </head>
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Fing Overflow</a>
+  <nav id="header" class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">
+      <span class="" style="font-size: 25px; color: Dodgerblue;"><i class="fab fa-stack-overflow"></i></span>
+      Fing Overflow
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -52,7 +59,7 @@
       </ul>
       <form class="form-inline my-4 my-lg-0 mr-auto">
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        <a href="search-results.html" class="btn btn-outline-success my-2 my-sm-0">Search</a>
       </form>
       <ul class="navbar-nav">
         <li class="nav-item">
@@ -84,54 +91,59 @@
     </div>
   </nav>
 
-    <div class="container pt-5">
-      <div class="row">
-        <div class="col-2" align="left">
-          <ul class="nav nav-pills flex-column">
-            <li class="nav-item active">
-              <a class="nav-link active" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <span class=""><i class="fas fa-globe-americas"></i></span>
-                &nbsp; Fing overflow
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Tags</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Users</a>
-            </li>
-          </ul>
-        </div>
+  <div class="container-fluid py-5">
+    <div class="row">
+      <div class="col-2" align="left">
+        <ul class="nav nav-pills flex-column">
+          <li class="nav-item active">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <span class=""><i class="fas fa-globe-americas"></i></span>
+              &nbsp; Fing overflow
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Tags</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Users</a>
+          </li>
+        </ul>
+      </div>
 
-        <div class="col-8" align="left">
+      <div class="col-8" align="left">
 
-            <div class="row">
-                <div class="col-9" align="left">
-                    <h2>Top Questions</h2>
-                </div>
-                <div class="col-3" align="right">
-                    <button type="button" class="btn btn-primary">Ask Question</button>
-                </div>
-            </div>
+          <!-- Top question 1-->
+          <div class="row">
+              <div class="col-9" align="left">
+                  <h2>Top Questions</h2>
+              </div>
+              <div class="col-3" align="right">
+                  <button type="button" class="btn btn-primary">Ask Question</button>
+              </div>
+          </div>
+          <!-- -->
 
-            <div class="row pt-5">
-              <div class="col-12" align="right">
-                <div class="btn-group" role="group" aria-label="Basic example">
-                  <button type="button" class="btn btn-secondary">Interesting</button>
-                  <button type="button" class="btn btn-light">Bountied</button>
-                  <button type="button" class="btn btn-light">Hot</button>
-                  <button type="button" class="btn btn-light">Week</button>
-                  <button type="button" class="btn btn-light">Month</button>
-                </div>
+          <!-- Top question 2-->
+          <div class="row pt-5">
+            <div class="col-12" align="right">
+              <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-secondary">Interesting</button>
+                <button type="button" class="btn btn-light">Bountied</button>
+                <button type="button" class="btn btn-light">Hot</button>
+                <button type="button" class="btn btn-light">Week</button>
+                <button type="button" class="btn btn-light">Month</button>
               </div>
             </div>
+          </div>
+          <!-- -->
 
-            <div class="row pt-5">
-              <div class="col-12">
-                <table class="table table-sm">
+          <!-- Top question 3-->
+          <div class="row pt-5">
+            <div class="col-12">
+              <table class="table table-sm">
                 <tbody>
                   <tr class="row">
                     <th class="col-sm-4 py-2">
@@ -263,22 +275,34 @@
 
 
                 </tbody>
-              </div>
+              </table>
             </div>
-        </div>
+          </div>
+          <!-- -->
+          
+      </div>
 
-        <div class="col-2" align="left">
+      <div class="col-2" align="left">
 
-        </div>
-     </div>
+      </div>
+   </div>
 
-    </div>
+  </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="resources/js/jquery-3.3.1.slim.min.js"></script>
-    <script src="resources/js/popper.min.js"></script>
-    <script src="resources/js/bootstrap.min.js"></script>
+  <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+      <div class="container text-center">
+        <span class="" style="font-size: 25px; color: Grey;">
+          <i class="fab fa-stack-overflow"></i>
+        </span>
+        <small>Copyright &copy; Fing Overflow</small>
+      </div>
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="resources/js/jquery-3.3.1.slim.min.js"></script>
+  <script src="resources/js/popper.min.js"></script>
+  <script src="resources/js/bootstrap.min.js"></script>
 
 </body>
 </html>

@@ -32,6 +32,11 @@
 
     #header{
       border-top: 3px solid Dodgerblue;
+      border-bottom: 1px solid #e4e6e8;
+    }
+
+    .left-menu{
+      border-right: 1px solid #dee2e6;
     }
   </style>
 </head>
@@ -96,10 +101,10 @@
     </div>
   </nav>
 
-  <div class="container-fluid py-5">
+  <div class="container-fluid">
     <div class="row">
       <!-- Left side bar -->
-      <div class="col-2" align="left">
+      <div class="col-2 py-4 left-menu" align="left">
         <ul class="nav nav-pills flex-column">
           <li class="nav-item active">
             <a class="nav-link active" href="index.html">Home</a>
@@ -121,7 +126,7 @@
       <!-- -->
 
       <!-- Principal Pane -->
-      <div class="col-8" align="left">
+      <div class="col-7 py-4" align="left">
 
           <!-- Title -->
           <div class="row">
@@ -176,7 +181,7 @@
                   <th class="col-sm-3 py-2">
                     <div class="row question-listed-stats">
                       <div class="col-6 center-block">
-                          <button type="button" class="btn btn-light">0 votes</button>
+                          <button type="button" class="btn btn-light"><p>0 votes</p></button>
                       </div>
                       <div class="col-6 center-block">
                           <button type="button" class="btn btn-success">3 answers</button>
@@ -304,7 +309,7 @@
       <!-- -->
 
       <!-- Right side bar -->
-      <div class="col-2" align="left">
+      <div class="col-3 py-4" align="left">
       </div>
       <!-- -->
 
